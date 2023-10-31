@@ -6,3 +6,13 @@
 
 ### Official Code Implementation for WACV 24 accepted paper.
 
+---
+
+# Environmental setting
+Overall environmental setting follows [robustbench](https://github.com/RobustBench/robustbench) and [TTA baselines](https://github.com/mariodoebler/test-time-adaptation).
+
+```bash
+conda update conda
+conda env create -f environment.yml
+conda activate tta
+```
