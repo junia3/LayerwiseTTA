@@ -1,7 +1,6 @@
 # Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
 - Paper Link : TBD
-- CVF Open Access : TBD
 
 > Official Code Implementation for WACV-24 accepted paper. Code will be uploaded soon.
 
@@ -42,7 +41,7 @@ LayerwiseTTA
 ---
 
 ## Pretrained models
-All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```Timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
 
 ---
 
