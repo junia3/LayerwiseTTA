@@ -43,8 +43,7 @@ LayerwiseTTA
 ---
 
 ## Pretrained models
-
-TBD
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench). In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
 
 ---
 
