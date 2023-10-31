@@ -16,3 +16,44 @@ conda update conda
 conda env create -f environment.yml
 conda activate tta
 ```
+
+---
+
+## Datasets
+
+TTA for classification mainly uses corruption datasets such as ImageNet-C. CIFAR-10C and CIFAR-100C can be easily obtained from the code itself, however ImageNet-C download link in baseline might be corrupted so it can be an issue.
+
+- CIFAR-10C : [Link](https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1)
+- CIFAR-100C : [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1)
+- ImageNet-C : [Link](https://zenodo.org/records/2235448)
+
+## Datasets directorys
+
+```bash
+LayerwiseTTA
+├── classification
+│   ├── data
+│   │   ├── CIFAR-10-C
+│   │   ├── CIFAR-100-C
+│   │   ├── ImageNet-C
+...
+```
+
+
+---
+
+## Pretrained models
+
+TBD
+
+---
+
+## Run test-time adaptation
+
+### Continual test-time adaptation
+
+TBD
+
+### Gradual test-time adaptation
+
+TBD
