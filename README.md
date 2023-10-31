@@ -1,7 +1,9 @@
 # Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
-> Official Code Implementation for WACV-24 accepted paper.
-> Code will be uploaded soon.
+- Paper Link : TBD
+- CVF Open Access : TBD
+
+> Official Code Implementation for WACV-24 accepted paper. Code will be uploaded soon.
 
 ---
 
