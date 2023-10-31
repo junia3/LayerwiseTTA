@@ -66,4 +66,4 @@ python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
 ---
 
 # Contact
-If you have any question and issue, feel free to contact ```jun_yonsei@yonsei.ac.kr```.
+If you have any issue with code, feel free to contact ```jun_yonsei@yonsei.ac.kr```.
