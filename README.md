@@ -27,7 +27,7 @@ TTA for classification mainly uses corruption datasets such as ImageNet-C. CIFAR
 - CIFAR-100C : [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1)
 - ImageNet-C : [Link](https://zenodo.org/records/2235448)
 
-## Datasets directorys
+## Datasets directory
 
 ```bash
 LayerwiseTTA
