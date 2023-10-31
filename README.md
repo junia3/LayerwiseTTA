@@ -6,7 +6,7 @@
 ---
 
 ## Environmental setting
-Overall environmental setting follows [robustbench](https://github.com/RobustBench/robustbench) and [TTA baselines](https://github.com/mariodoebler/test-time-adaptation).
+Environmental setting follows [robustbench](https://github.com/RobustBench/robustbench) and [TTA baselines](https://github.com/mariodoebler/test-time-adaptation).
 
 ```bash
 conda update conda
