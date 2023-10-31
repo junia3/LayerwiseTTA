@@ -5,6 +5,7 @@
 </p>
 
 > Official Code Implementation for WACV-24 accepted paper.
+> Code will be uploaded soon.
 
 ---
 
@@ -43,7 +44,7 @@ LayerwiseTTA
 ---
 
 ## Pretrained models
-All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench). In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
 
 ---
 
@@ -51,8 +52,11 @@ All pretrained models are provided in [robustbench](https://github.com/RobustBen
 
 ### Continual test-time adaptation
 
-TBD
+```bash
+python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING continual RNG_SEED 0
+```
 
 ### Gradual test-time adaptation
-
-TBD
+```bash
+python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
+```
