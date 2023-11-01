@@ -5,8 +5,7 @@
 </p>  
 
 > Official Code Implementation. Code will be uploaded soon.
-
-> Paper Link : TBD
+> 
 ---
 
 ## Environmental setting
