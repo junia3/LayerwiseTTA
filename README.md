@@ -4,7 +4,7 @@
   <img src="https://github.com/junia3/LayerwiseTTA/assets/79881119/783a7a75-41ed-414d-b51e-ebccf8e52616">
 </p>  
 
-> Official Code Implementation for WACV-24 accepted paper. Code will be uploaded soon.
+> Official Code Implementation. Code will be uploaded soon.
 
 > Paper Link : TBD
 ---
