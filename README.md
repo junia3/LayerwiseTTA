@@ -76,7 +76,9 @@ python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING gradual RNG_SEED 0
 
 # Citation
 
-> blahblahblahblahblahblahcitation
+```bash
+---
+```
 
 ---
 
