@@ -51,20 +51,31 @@ All pretrained models are provided in [robustbench](https://github.com/RobustBen
 
 ### Continual test-time adaptation
 
-- Example : source
+- Example : source/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING continual RNG_SEED 0
 ```
 
+- Example : [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING continual RNG_SEED 0
+```
+
 ### Gradual test-time adaptation
-- Example : source
+- Example : source/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
+```
+
+- Example : [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING gradual RNG_SEED 0
 ```
 
 ---
 
 # Citation
+TBD
 
 ---
 
