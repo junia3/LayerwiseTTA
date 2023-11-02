@@ -21,7 +21,7 @@ conda activate tta
 
 ## Datasets
 
-TTA for classification mainly uses corruption datasets such as ```ImageNet-C```. ```CIFAR-10C``` and ```CIFAR-100C``` can be easily obtained from the code itself, however ```ImageNet-C``` download link in baseline might be corrupted so it can be an issue.
+TTA for classification mainly uses corruption datasets such as ```ImageNet-C```. ```CIFAR-10C``` and ```CIFAR-100C``` can be easily obtained from the code itself, however ```ImageNet-C``` download link in baseline might be corrupted so it can be an issue. In the case of a dataset, when you initially load the dataset from ```robustBench```, it is automatically downloaded. However, if there are any issues with the download you may need to **manually construct the dataset** using the instructions provided in the link below.
 
 - ```CIFAR-10C``` : [Link](https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1)
 - ```CIFAR-100C``` : [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1)
