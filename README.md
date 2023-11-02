@@ -21,11 +21,11 @@ conda activate tta
 
 ## Datasets
 
-TTA for classification mainly uses corruption datasets such as ```ImageNet-C```. ```CIFAR-10C``` and ```CIFAR-100C``` can be easily obtained from the code itself, however ```ImageNet-C``` download link in baseline might be corrupted so it can be an issue. In the case of a dataset, when you initially load the dataset from ```robustBench```, it is automatically downloaded. However, if there are any issues with the download you may need to **manually construct the dataset configurations** from the link below.
+TTA for classification mainly uses corruption datasets such as ```ImageNet-C```. ```CIFAR-10C``` and ```CIFAR-100C``` can be easily obtained from the code itself. In the case of a dataset, when you initially load the dataset from ```robustBench```, it is automatically downloaded. However, if there are any issues with the download you may need to **manually construct the dataset configurations** from the link below.
 
-- ```CIFAR-10C``` : [Link](https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1)
-- ```CIFAR-100C``` : [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1)
-- ```ImageNet-C``` : [Link](https://zenodo.org/records/2235448)
+- ```CIFAR-10C``` : The data is automatically downloaded. Otherwise follow the [Link](https://zenodo.org/records/2535967/files/CIFAR-10-C.tar?download=1).
+- ```CIFAR-100C``` : The data is automatically downloaded. Otherwise follow the [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1).
+- ```ImageNet-C``` : Download [ImageNet](https://www.image-net.org/download.php) and [ImageNet-C](https://zenodo.org/records/2235448#.Yj2RO_co_mF).
 
 ## Datasets directory
 
@@ -39,15 +39,24 @@ LayerwiseTTA
 ...
 ```
 
+And you need to specify the root folder for all datasets in ```conf.py```. If you configure your dataset directory as above, simply put ```_C.DATA_DIR = "./data"``` would be sufficient.
 
 ---
 
 ## Pretrained models
-All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```Timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar). Furthermore in online test-time adaptation, since performance evaluation is conducted concurrently with optimization, we do not provide separately trained pretrained checkpoints(```.ckpt```) in classification task.
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar). Furthermore in online test-time adaptation, since performance evaluation is conducted concurrently with optimization, we do not provide separately trained pretrained checkpoints(```.ckpt```) in classification task.
 
 ---
 
-## Run test-time adaptation
+## Settings
+- ```reset_each_shift``` : Initialize the model state to the source-pretrained parameters after each adaptation to a new domain.
+- ```continual``` : Optimize the model for continuously shifting domains without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
+- ```gradual``` : Optimize the model for gradually increasing or decreasing domain shifts without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
+
+---
+
+## Run Test-Time Adaptation
+We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding config file.
 
 ### Continual test-time adaptation
 
