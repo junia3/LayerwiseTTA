@@ -1,6 +1,6 @@
 # Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
-Official Code for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation](link), published in WACV 2024. This repository includes other continual test-time adaptation methods for classification.
+**Official Code** for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation](link), published in **WACV 2024**. This repository includes other continual/gradual test-time adaptation methods for classification.
 
 We refer to our approach as ```LAW(Layer-wise Auto-Weighting)``` for a simplicity.
 
@@ -84,7 +84,7 @@ python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING continual RNG_SEED 0
 
 - [LAW](Link)/CIFAR-10C
 ```bash
-python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING continual RNG_SEED 0
+python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING continual RNG_SEED 0
 ```
 
 ### Gradual test-time adaptation
