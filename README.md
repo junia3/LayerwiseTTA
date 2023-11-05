@@ -111,7 +111,6 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 ---
 
 # Citation
-
 ```bash
 ---
 ```
@@ -120,3 +119,4 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 
 # Contact
 If you have any issue with code, feel free to contact ```jun_yonsei@yonsei.ac.kr```.
+
