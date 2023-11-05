@@ -55,7 +55,7 @@ Furthermore in online test-time adaptation, since performance evaluation is cond
 
 ---
 
-## Settings
+## Experimental Settings
 - ```reset_each_shift``` : Initialize the model state to the source-pretrained parameters after each adaptation to a new domain.
 - ```continual``` : Optimize the model for continuously shifting domains without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
 - ```gradual``` : Optimize the model for gradually increasing or decreasing domain shifts without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
