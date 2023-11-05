@@ -63,7 +63,7 @@ Furthermore in online test-time adaptation, since performance evaluation is cond
 ---
 
 ## Run Test-Time Adaptation
-We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding [config files](./cfgs).
+We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding [config files](./classification/cfgs).
 
 ### Continual test-time adaptation
 
