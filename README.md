@@ -1,5 +1,9 @@
 # Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
+Official Code for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation](link), published in WACV 2024. This repository includes other continual test-time adaptation methods for classification.
+
+We refer to our approach as ```LAW(Layer-wise Auto-Weighting)``` for a simplicity.
+
 <p align="center">
   <img src="https://github.com/junia3/LayerwiseTTA/assets/79881119/783a7a75-41ed-414d-b51e-ebccf8e52616">
 </p>  
@@ -44,7 +48,10 @@ And you need to specify the root folder for all datasets in ```conf.py```. If yo
 ---
 
 ## Pretrained models
-All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar). Furthermore in online test-time adaptation, since performance evaluation is conducted concurrently with optimization, we do not provide separately trained pretrained checkpoints(```.ckpt```) in classification task.
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
+I have referenced and modified the provided github code and added them to the ```get_model.py```. Additionally, I have configured the script to automatically download the ```.ckpt``` files from the Google Drive links, ensuring seamless downloading if the corresponding ```.ckpt``` file is not already available locally.
+
+Furthermore in online test-time adaptation, since performance evaluation is conducted concurrently with optimization, we do not provide separately trained pretrained checkpoints(```.ckpt```) in classification task.
 
 ---
 
@@ -56,29 +63,49 @@ All pretrained models are provided in [robustbench](https://github.com/RobustBen
 ---
 
 ## Run Test-Time Adaptation
-We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding config file.
+We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding [config files](./cfg).
 
 ### Continual test-time adaptation
 
-- Example : source/CIFAR-10C
+- source/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING continual RNG_SEED 0
 ```
 
-- Example : [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
+- [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING continual RNG_SEED 0
+```
+
+- [CoTTA](https://arxiv.org/abs/2203.13591)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING continual RNG_SEED 0
+```
+
+- [LAW](Link)/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING continual RNG_SEED 0
 ```
 
 ### Gradual test-time adaptation
-- Example : source/CIFAR-10C
+- source/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
 ```
 
-- Example : [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
+- [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING gradual RNG_SEED 0
+```
+
+- [CoTTA](https://arxiv.org/abs/2203.13591)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING gradual RNG_SEED 0
+```
+
+- [LAW](Link)/CIFAR-10C
+```bash
+python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 ```
 
 ---
