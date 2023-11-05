@@ -9,7 +9,7 @@ We refer to our approach as ```LAW(Layer-wise Auto-Weighting)``` for a simplicit
 </p>  
 
 > Code will be uploaded soon.
-
+> Paper link will be uploaded soon.
 ---
 
 ## Environmental setting
