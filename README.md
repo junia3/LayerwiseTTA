@@ -1,4 +1,4 @@
-# Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
+# LAW : Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
 **Official Code** for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation](link), published in **WACV 2024**. This repository includes other continual/gradual test-time adaptation methods for classification.
 
