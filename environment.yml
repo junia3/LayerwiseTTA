@@ -1,4 +1,4 @@
-name: tta
+name: layerwise
 channels:
   - pytorch
   - defaults
