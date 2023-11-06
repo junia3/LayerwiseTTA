@@ -124,5 +124,6 @@ dependencies:
     - yattag==1.14.0
     - wandb==0.12.17
     - einops==0.4.1
+    - ptflops==0.7.1.2
     - gdown
     - wget
