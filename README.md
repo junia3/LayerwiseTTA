@@ -6,7 +6,7 @@ Official Code for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adapta
  <img src="https://github.com/junia3/LayerwiseTTA/assets/79881119/783a7a75-41ed-414d-b51e-ebccf8e52616", width=800>
 </p>
 
-> Code and Paper link will be uploaded soon.
+> Paper link will be uploaded soon.
 ---
 
 ### Environmental setting
