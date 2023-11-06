@@ -13,7 +13,7 @@ Official Code for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adapta
 Environmental setting follows [robustbench](https://github.com/RobustBench/robustbench) and [TTA baselines](https://github.com/mariodoebler/test-time-adaptation).
 
 ```bash
-conda update -n base -c defaults conda
+conda update conda
 conda env create -f environment.yml
 conda activate layerwise
 ```
