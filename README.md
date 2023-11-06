@@ -15,7 +15,7 @@ Environmental setting follows [robustbench](https://github.com/RobustBench/robus
 ```bash
 conda update -n base -c defaults conda
 conda env create -f environment.yml
-conda activate tta
+conda activate layerwise
 ```
 
 ---
