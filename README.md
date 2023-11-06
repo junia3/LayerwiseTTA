@@ -65,13 +65,13 @@ We provide config files for all experiments and methods from the [baselines](htt
 **Continual test-time adaptation**
 
 ```bash
-python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING continual RNG_SEED 0
+python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING continual
 ```
 
 **Gradual test-time adaptation**
 
 ```bash
-python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
+python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual
 ```
 
 ---
