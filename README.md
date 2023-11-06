@@ -64,43 +64,12 @@ We provide config files for all experiments and methods from the [baselines](htt
 
 **Continual test-time adaptation**
 
-- source/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING continual RNG_SEED 0
-```
-
-- [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING continual RNG_SEED 0
-```
-
-- [CoTTA](https://arxiv.org/abs/2203.13591)/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING continual RNG_SEED 0
-```
-
-- [LAW](Link)/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING continual RNG_SEED 0
 ```
 
 **Gradual test-time adaptation**
-- source/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
-```
 
-- [TENT](https://arxiv.org/abs/2006.10726)/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/tent.yaml SETTING gradual RNG_SEED 0
-```
-
-- [CoTTA](https://arxiv.org/abs/2203.13591)/CIFAR-10C
-```bash
-python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING gradual RNG_SEED 0
-```
-
-- [LAW](Link)/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 ```
