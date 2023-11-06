@@ -77,7 +77,7 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 ---
 
 ### Downloading issue in ```robustbench```
-I found a downloading issue in ```robustbench/zenodo_download.py``` because some meta-data with url requests is modified. Therefore I replaced download code in [original version](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget``` module.
+I found a downloading issue in ```robustbench/zenodo_download.py``` when uploading the final version of official code. Issue occurs because of the modification in meta-data from url requests. Therefore I replaced ```download function``` in [original version](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget``` module.
 
 # Citation
 ```bash
