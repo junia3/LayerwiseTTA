@@ -9,7 +9,7 @@ Official Code for [Layer-wise Auto-Weighting for Non-Stationary Test-Time Adapta
 > Code and Paper link will be uploaded soon.
 ---
 
-## Environmental setting
+### Environmental setting
 Environmental setting follows [robustbench](https://github.com/RobustBench/robustbench) and [TTA baselines](https://github.com/mariodoebler/test-time-adaptation).
 
 ```bash
@@ -20,7 +20,7 @@ conda activate tta
 
 ---
 
-## Datasets
+### Datasets
 
 TTA for classification mainly uses corruption datasets such as ```ImageNet-C```. ```CIFAR-10C``` and ```CIFAR-100C``` can be easily obtained from the code itself. In the case of a dataset, when you initially load the dataset from ```robustBench```, it is automatically downloaded. However, if there are any issues with the download you may need to **manually construct the dataset configurations** from the link below.
 
@@ -28,7 +28,7 @@ TTA for classification mainly uses corruption datasets such as ```ImageNet-C```.
 - ```CIFAR-100C``` : The data is automatically downloaded. Otherwise follow the [Link](https://zenodo.org/records/3555552/files/CIFAR-100-C.tar?download=1).
 - ```ImageNet-C``` : Download [ImageNet](https://www.image-net.org/download.php) and [ImageNet-C](https://zenodo.org/records/2235448#.Yj2RO_co_mF).
 
-## Datasets directory
+### Datasets directory
 
 ```bash
 LayerwiseTTA
@@ -44,7 +44,7 @@ And you need to specify the root folder for all datasets in ```conf.py```. If yo
 
 ---
 
-## Pretrained models
+### Pretrained models
 All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
 I have referenced and modified the provided github code and added them to the ```get_model.py```. Additionally, I have configured the script to automatically download the ```.ckpt``` files from the Google Drive links, ensuring seamless downloading if the corresponding ```.ckpt``` file is not already available locally.
 
@@ -52,17 +52,17 @@ Furthermore in online test-time adaptation, since performance evaluation is cond
 
 ---
 
-## Experimental Settings
+### Experimental Settings
 - ```reset_each_shift``` : Initialize the model state to the source-pretrained parameters after each adaptation to a new domain.
 - ```continual``` : Optimize the model for continuously shifting domains without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
 - ```gradual``` : Optimize the model for gradually increasing or decreasing domain shifts without prior knowledge of when a domain shift occurs. Therefore, there is no resetting process.
 
 ---
 
-## Run Test-Time Adaptation
+### Run Test-Time Adaptation
 We provide config files for all experiments and methods from the [baselines](https://github.com/mariodoebler/test-time-adaptation). Simply run with the corresponding [config files](./classification/cfgs).
 
-### Continual test-time adaptation
+**Continual test-time adaptation**
 
 - source/CIFAR-10C
 ```bash
@@ -84,7 +84,7 @@ python test_time.py --cfg cfgs/cifar10_c/cotta.yaml SETTING continual RNG_SEED 0
 python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING continual RNG_SEED 0
 ```
 
-### Gradual test-time adaptation
+**Gradual test-time adaptation**
 - source/CIFAR-10C
 ```bash
 python test_time.py --cfg cfgs/cifar10_c/source.yaml SETTING gradual RNG_SEED 0
@@ -106,6 +106,9 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual RNG_SEED 0
 ```
 
 ---
+
+### Downloading issue in ```robustbench```
+I found downloading issue in ```robustbench/zenodo_download.py``` because some meta-data with url requests is modified. Therefore I replaced [original code](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget``` python module.
 
 # Citation
 ```bash
