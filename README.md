@@ -90,5 +90,5 @@ I found a downloading issue in ```robustbench/zenodo_download.py``` when uploadi
 ---
 
 # Contact
-If you have any issue with code or paper, feel free to contact ```jun_yonsei@yonsei.ac.kr```.
+If you have any issue with code or paper, feel free to contact [```jun_yonsei@yonsei.ac.kr```](mailto:jun_yonsei@yonsei.ac.kr).
 
