@@ -4,8 +4,6 @@
   <img src="https://img.shields.io/badge/arXiv-2311.05858-b31b1b.svg?style=plastic" alt="arXiv">
 </a>
 
-> Paper Link will be uploaded soon.
-
 An official repository for ```Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation```, published in ```WACV 2024```. This repository includes other continual/gradual test-time adaptation methods for classification. We refer to our approach as ```LAW(Layer-wise Auto-Weighting)``` for a simplicity.
 
 <p align="center">
