@@ -1,7 +1,7 @@
 # Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation
 
-<a href="arxiv_link_TBD">
-  <img src="https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg?style=plastic" alt="arXiv">
+<a href="https://arxiv.org/abs/2311.05858">
+  <img src="https://img.shields.io/badge/arXiv-2311.05858-b31b1b.svg?style=plastic" alt="arXiv">
 </a>
 
 > Paper Link will be uploaded soon.
