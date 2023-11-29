@@ -7,7 +7,7 @@
 Official repository for [```Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation```](https://arxiv.org/abs/2311.05858), accepted to ```WACV 2024```. This repository includes other continual/gradual test-time adaptation methods for classification. We refer to our approach as ```LAW(Layer-wise Auto-Weighting)``` for a simplicity. 
 
 <p align="center">
- <img src="https://github.com/junia3/LayerwiseTTA/assets/79881119/783a7a75-41ed-414d-b51e-ebccf8e52616", width=1000>
+ <img src="https://github.com/junia3/LayerwiseTTA/assets/79881119/9c8d30ed-3e46-47d2-ae90-9720ac97eb3d", width=1000>
 </p>
 
 ---
