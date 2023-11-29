@@ -48,7 +48,7 @@ And you need to specify the root folder for all datasets in ```conf.py```. If yo
 ---
 
 ### Pretrained models
-All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```Torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
+All pretrained models are provided in [robustbench](https://github.com/RobustBench/robustbench) or ```torchvision``` or ```timm``` so there is no need to download them manually. In the case of ResNet-50 used for additional experiments in supplementary, I used pretrained models in [TTT++](https://github.com/vita-epfl/ttt-plus-plus/tree/main/cifar).
 I have referenced and modified the provided github code and added them to the ```get_model.py```. Additionally, I have configured the script to automatically download the ```.ckpt``` files from the Google Drive links, ensuring seamless downloading if the corresponding ```.ckpt``` file is not already available locally.
 
 Furthermore in online test-time adaptation, since performance evaluation is conducted concurrently with optimization, we do not provide separately trained pretrained checkpoints(```.ckpt```) in classification task.
@@ -80,7 +80,7 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual
 ---
 
 ### About downloading issue in ```robustbench```
-I found a downloading issue in ```robustbench/zenodo_download.py``` when uploading the final version of official code. Issue occurs because of the modification in meta-data from url requests. Therefore I replaced ```download_file``` in [original version](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget``` module.
+I found a downloading issue in ```robustbench/zenodo_download.py``` when uploading the final version of official code. Issue occurs because of the modification in meta-data from url requests. Therefore I replaced ```download_file``` in [original version](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget```.
 
 # Citation
 ```bash
