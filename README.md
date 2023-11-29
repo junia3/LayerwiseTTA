@@ -83,6 +83,10 @@ python test_time.py --cfg cfgs/cifar10_c/law.yaml SETTING gradual
 I found a downloading issue in ```robustbench/zenodo_download.py``` when uploading the final version of official code. Issue occurs because of the modification in meta-data from url requests. Therefore I replaced ```download_file``` in [original version](https://github.com/RobustBench/robustbench/blob/master/robustbench/zenodo_download.py) with ```wget```.
 
 # Citation
+
+<details>
+<summary>Open</summary>
+  
 ```bibtex
 @article{park2023layer,
   title={Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation},
@@ -91,6 +95,8 @@ I found a downloading issue in ```robustbench/zenodo_download.py``` when uploadi
   year={2023}
 }
 ```
+
+</details>
 
 ---
 # Acknowledgement
