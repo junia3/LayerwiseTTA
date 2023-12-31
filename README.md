@@ -88,11 +88,12 @@ I found a downloading issue in ```robustbench/zenodo_download.py``` when uploadi
 <summary>Open</summary>
   
 ```bibtex
-@article{park2023layer,
+@inproceedings{park2024layer,
   title={Layer-wise Auto-Weighting for Non-Stationary Test-Time Adaptation},
   author={Park, Junyoung and Kim, Jin and Kwon, Hyeongjun and Yoon, Ilhoon and Sohn, Kwanghoon},
-  journal={arXiv preprint arXiv:2311.05858},
-  year={2023}
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={1414--1423},
+  year={2024}
 }
 ```
 
