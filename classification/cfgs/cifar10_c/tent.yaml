@@ -27,5 +27,5 @@ OPTIM:
   METHOD: Adam
   STEPS: 1
   BETA: 0.9
-  LR: 1e-5
+  LR: 1e-3
   WD: 0.
